@@ -1,0 +1,35 @@
+Statically Typed Language:In these languages,the data type of the variable is decalred at compile time.
+                          Example: Java, C, C++
+                    These languages are compiled by a compiler before execution. They are Type safe.
+                    These languages produces the machine code which helps in optimizing the memory.
+                    Extra compilation step makes development cycle slower.
+
+Dynamically Typed language: In these languages, data type of the variable is identified at run time.
+                            Example: Python, JavaScript.
+                            These languages do not have compiler but have an interpreter that checks the type of variable at the time of execution.So,We might ge errors.
+                            Less optimised code.
+                            Faster development cycle.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Programming Language                                      Scripting Language
+
+1.compiler based language                                 1.Interpreter based language.
+2.Platform dependent                                      2.platform independent
+3.Fast execution                                          3.Slow execution
+4.Secured                                                 4.Not secured
+5.Complex and lengthy                                     5.Fast and simple
+6.Less frequent                                           6.More frequent
+7.computationally intensive algorithms                    7.configurable interface.
+  ex : C,C++,Java                                            ex: python,perl,Javascript.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Programming Paradigms:It is a style or a way of writing programming.
+
+ex: procedural,object oriented,Structured,Functional,Functional level,Array.
+
+Never use programming language paradigms. It has to be named as a Programming paradigms.
+ 
+                            
+                      
