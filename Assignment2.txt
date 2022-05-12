@@ -1,0 +1,42 @@
+HTTP 1.1                                      HTTP2.0
+----------------------------------------------------------------------
+1. Keeps all requests in plain text          1. Keeps all the requests in a binary format.
+
+2.Loads resources one after the other.       2. Able to send multiple streams of data at once.
+
+3. It does not allow server to push          3.It allows to server to push the content before client asks for it.It enables us to send mandatory resources in advance.
+   the content before client asks for it 
+
+4.Compress HTTP messages to make them        4.Compress HTTP messages using advanced compression method called HPACK. Header data is seperated from Request data.
+ smaller
+
+5.Header information is repeated for every   5.HPACK allows the reuse of Header information.
+ request which cannot be compressed.
+
+6. For each and every request new TCP        6.Single secured TCP connection for multiple streams of data.
+   connected is created and previous one
+   is destroyed
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Objects: All JavaScript values except for primitives are objects.
+       
+Objects are variables to. But objects contain many values.
+There is no index value for Objects.
+We have keys and values. Javascript object is a collection of named values.
+
+Example: let test = {
+                      name : "abc";
+                      age : 63;
+                      city : "Hyd";
+ 			    phone :[1234567, 56789];
+                     };
+
+
+Dot operator : console.log(test.name); o/p: abc
+
+Of operator : console.log(test["name"]);
+
+Javascript objects are mutable. They are addressed by reference not by value.
