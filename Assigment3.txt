@@ -1,0 +1,148 @@
+JSON Iteration over all for loops:
+
+For loop using an array:
+
+EX: let n = [1,2,3,4,5];
+for(let i=0;i<n.length;i++)
+{
+console.log(n[i]);
+}
+
+-------
+
+
+const User = {
+    name : "abc",
+    age : 32,
+    occupation : "web Developer"
+};
+console.log(Object.keys(User));
+console.log(Object.values(User));
+console.log(Object.entries(User));
+
+// for in
+for(const key in User){
+    console.log(key);
+}
+
+const a = [1,2,3,4];
+for(const key in a){
+    console.log(key)
+}
+
+//for of
+const a1 = [3,4,5,6];
+for(const value of a1){
+    console.log(value);
+}
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Window - Window is the first thing that get loaded.This window object has the majority of the properties like length, innerWidth, innerHeight, name. 
+         window is the is the execution context and global object for that context's JavaScript
+
+Document - The document object is your html, aspx, php, or other document that will be loaded into the browser
+		Document contains the DOM, initialized by parsing HTML.The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc.
+           What does this really mean? That means if you want to access a property for the window it is window.property,
+           if it is document it is window.document.property which is also available in short as document.property.
+
+
+
+Screen - describes the physical display's full screen.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JSON Resume:
+
+const Resume = {
+    "intro": {
+        "fname": "Sai Divya",
+        "lname": "Kilari",
+        "email": "kilarisaidivya@gmail.com",
+        "mobile": [123456789, 987654321],
+        "adress":
+        {
+            "Street": "Lotus pond",
+            "landmark": "Balaji Temple",
+            "District": "Sangareddy",
+            "City": "Hyderabad",
+            "state": "Telangana",
+            "postal code": 502032
+        }
+    },
+    "education": [{
+        "SSC": {
+            "Institution": "Narayana E Techno School",
+            "YearofPassing": 2014,
+            "Aggregate": 9.7,
+            "Boardofeducation": "State Board"
+        },
+        "Intermediate": {
+            "Institution": "Narayana Junior College",
+            "YearofPassing": 2016,
+            "Aggregate": 97,
+            "Boardofeducation": "State Board"
+        },
+        "Undergraduation": {
+            "Institution": "BVRIT",
+            "YearofPassing": 2020,
+            "Aggregate": 8.81,
+            "University": "JNTUH"
+        };
+    }],
+    "WorkExperience": [{
+        "Intership": [{
+            "Organisation1": "IHUBS Linmited",
+            "Position": " Software Developer",
+            "Start Date": "2019-05-01",
+            "End Date": "2019-06-01"
+
+        },
+        {
+            "organisation2": "Z-Soft technologies",
+            "Position": "Software Developer",
+            "Start Date": "2019-06-15",
+            "End Date": "2019-07-15"
+
+        },
+        ],
+        "Work": {
+            "Organisation": " TCS",
+            "Role": " INFO Technology Associate",
+            "Start Date": "2020-12-07",
+        }
+    }],
+    "Technical Skills": {
+        "Operating Systems": ["Unix", "Windows10"],
+        "Programming Languages": ["c", "java", "python"],
+        "Database": ["SQL"],
+        "Tools": ["SAP BI/BW"]
+    },
+    "Projects": [{
+        "ProjectName1": "CLEANING BIG DATAAN INTERACTIVE APPROACH WITH SQOOP AND HIVE",
+        "Team Size": 1,
+    },
+    {
+        "projectName2": "NEURAL NETWORK MODEL FOR AVERAGE FUEL CONSUMPTION IN HEAVY Vehicles",
+        "Team Size": 2,
+    },
+    ],
+    "Certification": "Certification in “MACHINE LEARNING” in Coursera",
+    "Workshops": ["BIG DATA ", "Cloud Computing"],
+    "Match Proficiency": ["Engineering mathematics", "Probability and statistics", "Discrete mathematical structures"],
+
+
+
+
+};
+                             "
+
+
+				     
+                            
+
