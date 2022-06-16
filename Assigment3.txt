@@ -1,63 +1,93 @@
-JSON Iteration over all for loops:
+// for loop
 
-For loop using an array:
+var obj = [{ "name" :"abc",
+            "age" : "23",
+                },
+                { "name" : "cde",
+                    "age" : "23"}];
 
-EX: let n = [1,2,3,4,5];
-for(let i=0;i<n.length;i++)
+    for(i=0;i<obj.length;i++)
 {
-console.log(n[i]);
-}
+        console.log(obj[i].name +" "+ obj[i].age);
+    }
 
--------
+o/p :
+abc 23
+cde 23
+--------------------------------------------------------------------
 
+// for in loop      
 
-const User = {
-    name : "abc",
-    age : 32,
-    occupation : "web Developer"
-};
-console.log(Object.keys(User));
-console.log(Object.values(User));
-console.log(Object.entries(User));
+var obj = { "name" :"abc",
+            "age" : "23",
+            "salary" : "25000"  };
+                
+    for( var key in obj)
+{
+        console.log(key +" "+obj[key]);
 
-// for in
-for(const key in User){
-    console.log(key);
-}
+    }
 
-const a = [1,2,3,4];
-for(const key in a){
-    console.log(key)
-}
-
-//for of
-const a1 = [3,4,5,6];
-for(const value of a1){
-    console.log(value);
-}
+o/p:
+name abc
+age 23
+salary 25000
 
 
 
+var obj = [{ "name" :"abc",
+            "age" : "23",
+                },
+                { "name" : "cde",
+                    "age" : "23"}];
+                                   
+    for( var key in obj)
+    {
+            console.log(key +" "+obj[key]);
+    
+        }
 
-------------------------------------------------------------------------------------------------------------------------------------
+//o/p: 
+0 [object Object]
+1 [object Object]
+------------------------------------------------------------------
+
+// for of loop 
 
 
-Window - Window is the first thing that get loaded.This window object has the majority of the properties like length, innerWidth, innerHeight, name. 
-         window is the is the execution context and global object for that context's JavaScript
+var obj = [{ "name" :"abc",
+            "age" : "23",
+                },
+                { "name" : "cde",
+                    "age" : "23"}];
 
-Document - The document object is your html, aspx, php, or other document that will be loaded into the browser
-		Document contains the DOM, initialized by parsing HTML.The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc.
-           What does this really mean? That means if you want to access a property for the window it is window.property,
-           if it is document it is window.document.property which is also available in short as document.property.
+    for(var key of obj)
+{
+        console.log(key);
+    }
+
+    // o/p
+
+    {name: 'abc', age: '23'}
+    {name: 'cde', age: '23'}
 
 
+-----------------------------------------------------------------
+//for each loop
 
-Screen - describes the physical display's full screen.
+var obj=[{"name":"abc",
+          "age":"56"},{"name":"cde","age":"45"}];
+          
+var result=obj.forEach(element => {
+            console.log(element);
+          });
 
+o/p: {name: 'abc', age: '56'}
+ {name: 'cde', age: '45'}
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ //JSON Resume
 
-JSON Resume:
 
 const Resume = {
     "intro": {
@@ -93,7 +123,7 @@ const Resume = {
             "YearofPassing": 2020,
             "Aggregate": 8.81,
             "University": "JNTUH"
-        };
+        },
     }],
     "WorkExperience": [{
         "Intership": [{
@@ -136,13 +166,7 @@ const Resume = {
     "Workshops": ["BIG DATA ", "Cloud Computing"],
     "Match Proficiency": ["Engineering mathematics", "Probability and statistics", "Discrete mathematical structures"],
 
-
-
-
 };
-                             "
 
-
-				     
-                            
-
+console.log(Resume);
+                        
